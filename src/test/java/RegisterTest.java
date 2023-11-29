@@ -15,17 +15,11 @@ import java.time.Duration;
 import static driver.WebDriverCreator.createWebDriver;
 
 public class RegisterTest extends BaseTest{
-   // protected WebDriver driver;
+
     public static Faker faker = new Faker();
-//   @Before
-//   public void init_App()
-//    {
-//        driver = createWebDriver();
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//    }
+
 
     LoginPage loginPage;
-    //public static Faker faker = new Faker();
     @Test
     @DisplayName("Регистрация юзера по валидным данным")
     public void testRegisterValid() {

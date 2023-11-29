@@ -18,11 +18,8 @@ public class RegisterPage {
 
     @Step("Регистрация юзера")
     public LoginPage inputRegisterForm(String name, String password, String email) {
-       // driver.findElement(nameInput).click();
         driver.findElement(nameInput).sendKeys(name);
-       // driver.findElement(passwordInput).click();
         driver.findElement(passwordInput).sendKeys(password);
-        //driver.findElement(emailInput).click();
         driver.findElement(emailInput).sendKeys(email);
         driver.findElement(registerButton).click();
         return new LoginPage(driver);
